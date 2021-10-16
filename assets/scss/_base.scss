@@ -1,0 +1,57 @@
+/*!
+*--------------
+* Template Name: EventPlanner - v1.0
+* Template URL: dycodes.github.com/EventPlanner
+* Author: Yusuf Daudu - dyCodes
+* Author URL: github.com/dycodes
+* License: https://dycodes.github.com/EventPlanner/license
+*---------------------------------
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	text-decoration: none;
+}
+body {
+	color: #222;
+	overflow-x: hidden;
+	font-family: Roboto, Oxygen, 'Montserrat', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	line-height: 1.4;
+}
+a {
+	text-decoration: none;
+}
+img {
+	width: 100%;
+}
+p {
+	color: $textColor;
+}
+._flex {
+	display: flex;
+	align-content: center;
+}
+._flex_sb {
+	display: flex;
+	align-content: center;
+	justify-content: space-between;
+}
+
+// Bootstrap Style Reset
+ol,
+ul {
+	padding: 0;
+}
+.form-control:focus {
+	border-color: $mainColor;
+	box-shadow: none !important;
+}

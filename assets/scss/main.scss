@@ -2,3 +2,66 @@
 @import './base';
 @import './components';
 @import './layout';
+
+/*!----- MAIN -------*/
+.section_title {
+	text-align: center;
+	padding-bottom: 10px;
+
+	h2 {
+		text-transform: uppercase;
+	}
+	p {
+		text-transform: capitalize;
+	}
+}
+
+/*!----- HERO SECTION -------*/
+#hero {
+	margin-top: 20px;
+
+	article {
+		height: 65vh;
+		max-height: 460px;
+		border-radius: 10px;
+		overflow: hidden;
+
+		img {
+			object-fit: cover;
+			height: 100%;
+		}
+		.card-body {
+			width: 100%;
+			padding: 10px 20px;
+			padding-top: 45px;
+			position: absolute;
+			bottom: 0;
+			background: linear-gradient(#0000, rgba(34, 34, 34, 0.85), #222);
+		}
+		.entry-meta {
+			padding-top: 6px;
+
+			li {
+				margin-right: 20px;
+				font-size: 15px;
+
+				a,
+				.bi {
+					color: #eee;
+				}
+				.bi {
+					padding-right: 5px;
+				}
+			}
+		}
+		.entry-title {
+			color: #fff;
+			h2 {
+				font-size: 20px;
+			}
+		}
+	}
+}
+
+@include tablet {
+}

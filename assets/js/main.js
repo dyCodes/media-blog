@@ -1,10 +1,10 @@
 /*!
  *--------------
- * Template Name: EventPlanner - v1.0
- * Template URL: dycodes.github.com/EventPlanner
+ * Template Name: TechZone Blog - v1.0
+ * Template URL: dycodes.github.com/TechZone
  * Author: Yusuf Daudu - dyCodes
- * Author URL: github.com/dycodes
- * License: https://dycodes.github.com/EventPlanner/license
+ * Author URL: https://github.com/dycodes
+ * License: https://dycodes.github.com/TechZone/LICENSE
  *---------------------------------
  */
 

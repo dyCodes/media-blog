@@ -51,7 +51,8 @@ ol,
 ul {
 	padding: 0;
 }
-.form-control:focus {
-	border-color: $mainColor;
+.form-control:focus,
+.btn:focus {
+	border-color: $black;
 	box-shadow: none !important;
 }

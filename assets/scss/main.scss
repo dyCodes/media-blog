@@ -18,7 +18,7 @@
 
 /*!----- HERO SECTION -------*/
 #hero {
-	margin-top: 20px;
+	padding: 20px 0;
 
 	article {
 		height: 65vh;
@@ -37,31 +37,29 @@
 			position: absolute;
 			bottom: 0;
 			background: linear-gradient(#0000, rgba(34, 34, 34, 0.85), #222);
-		}
-		.entry-meta {
-			padding-top: 6px;
 
-			li {
-				margin-right: 20px;
-				font-size: 15px;
-
+			.entry-meta li {
 				a,
 				.bi {
 					color: #eee;
 				}
-				.bi {
-					padding-right: 5px;
-				}
 			}
-		}
-		.entry-title {
-			color: #fff;
-			h2 {
-				font-size: 20px;
+			.entry-title {
+				color: #fff;
 			}
 		}
 	}
 }
 
+main .posts {
+	article {
+		margin: 10px 0;
+	}
+}
+
+#sidebar {
+	.widget {
+	}
+}
 @include tablet {
 }

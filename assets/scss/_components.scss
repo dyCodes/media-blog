@@ -1,7 +1,6 @@
 form.search_form {
-	max-width: 360px;
+	width: 100%;
 	height: 38px;
-	margin-left: auto;
 
 	input {
 		background: transparent;
@@ -10,5 +9,32 @@ form.search_form {
 	.btn {
 		color: #fff;
 		background: #ffc107;
+	}
+}
+article {
+	border-radius: 10px;
+	overflow: hidden;
+
+	.entry-meta {
+		padding-top: 6px;
+
+		li {
+			margin-right: 20px;
+			font-size: 15px;
+
+			a,
+			.bi {
+				color: #555;
+			}
+			.bi {
+				padding-right: 5px;
+			}
+		}
+	}
+	.entry-title {
+		color: #222;
+		h2 {
+			font-size: 20px;
+		}
 	}
 }

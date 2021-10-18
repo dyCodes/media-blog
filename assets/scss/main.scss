@@ -20,32 +20,73 @@
 #hero {
 	padding: 20px 0;
 
-	article {
-		height: 65vh;
-		max-height: 460px;
-		border-radius: 10px;
-		overflow: hidden;
+	#post_slider_hero {
+		padding-bottom: 42px;
 
-		img {
-			object-fit: cover;
-			height: 100%;
-		}
-		.card-body {
-			width: 100%;
-			padding: 10px 20px;
-			padding-top: 45px;
-			position: absolute;
-			bottom: 0;
-			background: linear-gradient(#0000, rgba(34, 34, 34, 0.85), #222);
+		.swiper-slide {
+			border-radius: 10px;
+			overflow: hidden;
+			article {
+				min-height: 380px;
+				height: 67vh;
+				max-height: 535px;
 
-			.entry-meta li {
-				a,
-				.bi {
-					color: #eee;
+				img {
+					object-fit: cover;
+					height: 100%;
+				}
+				.card-body {
+					width: 100%;
+					padding: 16px 20px;
+					padding-top: 50px;
+					position: absolute;
+					bottom: 0;
+					background: linear-gradient(#0000, rgba(34, 34, 34, 0.85), #222);
+
+					.category a {
+						color: $black;
+						font-size: 13px;
+						padding: 4px 15px;
+						background: $mainColor;
+						border: 1px solid #ffc107;
+						border-radius: 16px;
+						text-transform: uppercase;
+						margin-bottom: 10px;
+					}
+					.entry-meta li {
+						a,
+						.bi {
+							color: #eee;
+						}
+						&.category {
+							position: absolute;
+							top: 10px;
+							left: 10px;
+						}
+					}
+					.entry-title {
+						color: #fff;
+					}
 				}
 			}
-			.entry-title {
-				color: #fff;
+		}
+		.swiper-button-next,
+		.swiper-button-prev {
+			color: #fff;
+			width: 45px;
+			height: 45px;
+			top: 46%;
+			background: rgba(34, 34, 34, 0.35);
+			border-radius: 50%;
+
+			&::after {
+				font-size: 24px;
+			}
+		}
+		.swiper-pagination.swiper-pagination-bullets {
+			bottom: 0;
+			.swiper-pagination-bullet-active {
+				background: $mainColor;
 			}
 		}
 	}

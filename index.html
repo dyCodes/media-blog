@@ -19,6 +19,7 @@
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap.min.css" rel="stylesheet" />
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+  <link href="assets/vendor/swiper-bundle.min.css" rel="stylesheet" />
   <!-- Template Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet" />
 
@@ -41,7 +42,7 @@
     <nav id="mobile_navbar" class="navbar navbar-expand-md" id="navbar">
       <div class="container">
         <!-- Logo -->
-        <a class="logo" href="/">
+        <a class="logo" href="">
           <img src="./assets/img/logo.png" alt="EventPlanner" />
         </a>
 
@@ -113,65 +114,105 @@
     <!------- Hero Section ------->
     <section id="hero">
       <div class="container">
-        <div class="slider _flex">
 
-          <article class="card">
-            <img src="./assets/img/blog/blog-1.jpg" alt="">
+        <div id="post_slider_hero" class="swiper swiper-container">
+          <div class="swiper-wrapper">
+            <!-- slide item -->
+            <div class="swiper-slide">
+              <article class="card post">
+                <img src="./assets/img/blog/blog-1.jpg" alt="">
 
-            <div class="card-body">
-              <ul class="entry-meta _flex">
-                <li class="_flex">
-                  <i class="bi bi-person"></i> <a href="blog-single.html">John
-                    Doe</a>
-                </li>
+                <div class="card-body">
+                  <div class="category _flex">
+                    <a href="blog-single.html">Crypto</a>
+                  </div>
 
-                <li class="_flex"><i class="bi bi-newspaper"></i>
-                  <a href="blog-single.html">Crypto</a>
-                </li>
 
-                <li class="_flex">
-                  <i class="bi bi-clock"></i>
-                  <a href="blog-single.html">
-                    <time datetime="2020-01-01">Jan 1, 2020</time></a>
-                </li>
+                  <a href="blog-single.html" class="entry-title">
+                    <h2>Some quick example text to build on the card</h2>
+                  </a>
 
-              </ul>
+                  <ul class="entry-meta _flex">
+                    <li class="_flex">
+                      <i class="bi bi-person"></i> <a href="blog-single.html">John
+                        Doe</a>
+                    </li>
+                    <li class="_flex">
+                      <i class="bi bi-clock"></i>
+                      <a href="blog-single.html">
+                        <time datetime="2020-01-01">Jan 1, 2020</time></a>
+                    </li>
+                  </ul>
 
-              <a href="blog-single.html" class="entry-title">
-                <h2>Some quick example text to build on the card</h2>
-              </a>
+                </div>
+              </article>
             </div>
-          </article>
+            <!-- slide item -->
+            <div class="swiper-slide">
+              <article class="card post">
+                <img src="./assets/img/blog/blog-2.jpg" alt="">
 
-          <article class="card">
-            <img src="./assets/img/blog/blog-1.jpg" alt="">
-          
-            <div class="card-body">
-              <ul class="entry-meta _flex">
-                <li class="_flex">
-                  <i class="bi bi-person"></i> <a href="blog-single.html">John
-                    Doe</a>
-                </li>
-          
-                <li class="_flex"><i class="bi bi-newspaper"></i>
-                  <a href="blog-single.html">Crypto</a>
-                </li>
-          
-                <li class="_flex">
-                  <i class="bi bi-clock"></i>
-                  <a href="blog-single.html">
-                    <time datetime="2020-01-01">Jan 1, 2020</time></a>
-                </li>
-          
-              </ul>
-          
-              <a href="blog-single.html" class="entry-title">
-                <h2>Some quick example text to build on the card</h2>
-              </a>
+                <div class="card-body">
+                  <div class="category _flex">
+                    <a href="blog-single.html">Crypto</a>
+                  </div>
+
+
+                  <a href="blog-single.html" class="entry-title">
+                    <h2>Some quick example text to build on the card</h2>
+                  </a>
+
+                  <ul class="entry-meta _flex">
+                    <li class="_flex">
+                      <i class="bi bi-person"></i> <a href="blog-single.html">John
+                        Doe</a>
+                    </li>
+                    <li class="_flex">
+                      <i class="bi bi-clock"></i>
+                      <a href="blog-single.html">
+                        <time datetime="2020-01-01">Jan 1, 2020</time></a>
+                    </li>
+                  </ul>
+
+                </div>
+              </article>
             </div>
-          </article>
+            <!-- slide item -->
+            <div class="swiper-slide">
+              <article class="card post">
+                <img src="./assets/img/blog/blog-3.jpg" alt="">
 
+                <div class="card-body">
+                  <div class="category _flex">
+                    <a href="blog-single.html">Crypto</a>
+                  </div>
+
+
+                  <a href="blog-single.html" class="entry-title">
+                    <h2>Some quick example text to build on the card</h2>
+                  </a>
+
+                  <ul class="entry-meta _flex">
+                    <li class="_flex">
+                      <i class="bi bi-person"></i> <a href="blog-single.html">John
+                        Doe</a>
+                    </li>
+                    <li class="_flex">
+                      <i class="bi bi-clock"></i>
+                      <a href="blog-single.html">
+                        <time datetime="2020-01-01">Jan 1, 2020</time></a>
+                    </li>
+                  </ul>
+
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
         </div>
+
       </div>
     </section>
     <!-- End Hero -->
@@ -184,54 +225,54 @@
 
           <article class="card post">
             <img src="./assets/img/blog/blog-1.jpg" alt="">
-          
+
             <div class="card-body">
               <ul class="entry-meta _flex">
                 <li class="_flex">
                   <i class="bi bi-person"></i> <a href="blog-single.html">John
                     Doe</a>
                 </li>
-          
+
                 <li class="_flex"><i class="bi bi-newspaper"></i>
                   <a href="blog-single.html">Crypto</a>
                 </li>
-          
+
                 <li class="_flex">
                   <i class="bi bi-clock"></i>
                   <a href="blog-single.html">
                     <time datetime="2020-01-01">Jan 1, 2020</time></a>
                 </li>
-          
+
               </ul>
-          
+
               <a href="blog-single.html" class="entry-title">
                 <h2>Some quick example text to build on the card</h2>
               </a>
             </div>
           </article>
-          
+
           <article class="card post">
             <img src="./assets/img/blog/blog-1.jpg" alt="">
-          
+
             <div class="card-body">
               <ul class="entry-meta _flex">
                 <li class="_flex">
                   <i class="bi bi-person"></i> <a href="blog-single.html">John
                     Doe</a>
                 </li>
-          
+
                 <li class="_flex"><i class="bi bi-newspaper"></i>
                   <a href="blog-single.html">Crypto</a>
                 </li>
-          
+
                 <li class="_flex">
                   <i class="bi bi-clock"></i>
                   <a href="blog-single.html">
                     <time datetime="2020-01-01">Jan 1, 2020</time></a>
                 </li>
-          
+
               </ul>
-          
+
               <a href="blog-single.html" class="entry-title">
                 <h2>Some quick example text to build on the card</h2>
               </a>
@@ -361,7 +402,38 @@
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap.min.js"></script>
-  <script src="assets/vendor/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper-bundle.min.js"></script>
+
+  <script>
+    new Swiper('#post_slider_hero', {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      loop: true,
+      speed: 600,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        // dynamicBullets: true,
+      },
+
+      breakpoints: {
+        920: {
+          slidesPerView: 2,
+        },
+        1024: {
+          slidesPerView: 3,
+        },
+      }
+    });
+
+  </script>
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 </body>

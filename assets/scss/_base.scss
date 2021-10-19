@@ -25,10 +25,15 @@ h2,
 h3,
 h4,
 h5 {
+	color: #222;
 	line-height: 1.4;
 }
 a {
 	text-decoration: none;
+
+	&:hover {
+		color: $mainColor;
+	}
 }
 img {
 	width: 100%;

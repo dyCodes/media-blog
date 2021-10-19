@@ -15,6 +15,19 @@ article {
 	border-radius: 10px;
 	overflow: hidden;
 
+	.category a {
+		color: $black;
+		font-size: 13px;
+		padding: 4px 15px;
+		background: $mainColor;
+		border: 1px solid #ffc107;
+		border-radius: 16px;
+		text-transform: uppercase;
+		margin-bottom: 14px;
+	}
+	.card-body {
+		padding-top: 25px;
+	}
 	.entry-meta {
 		padding-top: 6px;
 
@@ -34,7 +47,10 @@ article {
 	.entry-title {
 		color: #222;
 		h2 {
-			font-size: 20px;
+			font-size: 25px;
 		}
+	}
+	.entry-content {
+		margin: 16px 0;
 	}
 }

@@ -54,3 +54,16 @@ article {
 		margin: 16px 0;
 	}
 }
+.categories ul {
+	li {
+		padding: 10px 0;
+		border-bottom: 1px dotted #ddd;
+	}
+	a {
+		color: #222;
+
+		span {
+			color: #777;
+		}
+	}
+}

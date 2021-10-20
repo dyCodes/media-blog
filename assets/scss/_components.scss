@@ -1,16 +1,4 @@
-form.search_form {
-	width: 100%;
-	height: 38px;
-
-	input {
-		background: transparent;
-		font-size: 14px;
-	}
-	.btn {
-		color: #fff;
-		background: #ffc107;
-	}
-}
+/*!----- BLOG COMPONENTS -------*/
 article {
 	border-radius: 10px;
 	overflow: hidden;
@@ -37,7 +25,7 @@ article {
 
 			a,
 			.bi {
-				color: #555;
+				color: $textGray;
 			}
 			.bi {
 				padding-right: 5px;
@@ -52,19 +40,6 @@ article {
 	}
 	.entry-content {
 		margin: 16px 0;
-	}
-}
-.categories ul {
-	li {
-		padding: 10px 0;
-		border-bottom: 1px dotted #ddd;
-	}
-	a {
-		color: #222;
-
-		span {
-			color: #777;
-		}
 	}
 }
 .posts_list {
@@ -83,11 +58,55 @@ article {
 			font-size: 17px;
 		}
 		.date {
-			color: #888;
+			color: $textGray;
 			font-size: 15px;
 			.bi {
 				padding-right: 5px;
 			}
+		}
+	}
+}
+
+form.search_form {
+	width: 100%;
+	height: 38px;
+
+	input {
+		background: transparent;
+		font-size: 14px;
+	}
+	.btn {
+		color: #fff;
+		background: #ffc107;
+	}
+}
+.categories ul {
+	li {
+		padding: 10px 0;
+		border-bottom: 1px dotted #ddd;
+	}
+	a {
+		color: #222;
+
+		span {
+			color: $textGray;
+		}
+	}
+}
+.tags ul {
+	li {
+		border-color: #555;
+		border-radius: 2px;
+		a {
+			color: #555;
+			transition: 0.4s;
+		}
+	}
+	li:hover {
+		background: $mainColor;
+		border-color: $mainColor;
+		a {
+			color: #222;
 		}
 	}
 }

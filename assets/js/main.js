@@ -31,3 +31,15 @@ const scrollto = elem => {
 		behavior: 'smooth'
 	});
 };
+
+// document.querySelector('.demo').;
+
+// SHOW SEARCH FORM ON SEARCHBTN CLICK
+let searchForm = selectElem('#searchForm');
+selectElem('#searchBtn').addEventListener('click', () => {
+	searchForm.classList.add('slideUp');
+	selectElem('#searchForm form input').focus();
+});
+selectElem('#searchForm .overlay').addEventListener('click', () => {
+	searchForm.classList.remove('slideUp');
+});

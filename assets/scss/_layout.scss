@@ -172,21 +172,29 @@ footer {
 			transform: translateY(-100vh);
 			width: 100vw;
 			height: 100vh;
-			position: absolute;
+			position: fixed;
 			top: 0;
 			left: 0;
 			display: grid;
 			place-content: center;
-			z-index: 50;
-			background: rgba(26, 26, 26, 0.94);
+			z-index: 5;
 
 			form.search_form {
 				width: 85vw;
 				height: 45px;
 				margin-bottom: 50%;
+				z-index: 6;
+			}
+			.overlay {
+				width: 100vw;
+				height: 100vh;
+				position: absolute;
+				top: 0;
+				left: 0;
+				background: rgba(26, 26, 26, 0.94);
 			}
 			&.slideUp {
-				transform: translateY(100vh);
+				transform: translateY(0);
 			}
 		}
 	}

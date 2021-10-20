@@ -1,23 +1,28 @@
 /*!----- BLOG COMPONENTS -------*/
-article {
+article.post {
 	border-radius: 10px;
 	overflow: hidden;
 
-	.category a {
-		color: $black;
-		font-size: 13px;
-		padding: 4px 15px;
-		background: $mainColor;
-		border: 1px solid #ffc107;
-		border-radius: 16px;
-		text-transform: uppercase;
-		margin-bottom: 14px;
+	.category {
+		position: absolute;
+		top: 20px;
+		a {
+			color: $black;
+			font-size: 13px;
+			padding: 4px 15px;
+			background: $mainColor;
+			border: 1px solid #ffc107;
+			border-radius: 16px;
+			text-transform: uppercase;
+			margin-bottom: 14px;
+		}
 	}
 	.card-body {
 		padding-top: 25px;
 	}
 	.entry-meta {
 		padding-top: 6px;
+		text-transform: capitalize;
 
 		li {
 			margin-right: 20px;
@@ -40,6 +45,7 @@ article {
 	}
 	.entry-content {
 		margin: 16px 0;
+		display: none;
 	}
 }
 .posts_list {
@@ -60,6 +66,8 @@ article {
 		.date {
 			color: $textGray;
 			font-size: 15px;
+			text-transform: capitalize;
+
 			.bi {
 				padding-right: 5px;
 			}
@@ -100,6 +108,7 @@ form.search_form {
 		a {
 			color: #555;
 			transition: 0.4s;
+			text-transform: capitalize;
 		}
 	}
 	li:hover {

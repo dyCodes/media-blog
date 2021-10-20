@@ -20,44 +20,42 @@
 	padding: 20px 0;
 
 	#post_slider_hero {
-		padding-bottom: 38px;
+		padding-bottom: 35px;
 
 		.swiper-slide {
-			border-radius: 10px;
+			border-radius: 2px;
 			overflow: hidden;
+		}
+		article {
+			min-height: 380px;
+			height: 70vh;
+			max-height: 568px;
 
-			article {
-				min-height: 380px;
-				height: 67vh;
-				max-height: 535px;
+			img {
+				object-fit: cover;
+				height: 100%;
+			}
+			.card-body {
+				width: 100%;
+				padding: 16px 20px;
+				padding-top: 50px;
+				position: absolute;
+				bottom: 0;
+				background: linear-gradient(#0000, rgba(34, 34, 34, 0.85), #222);
 
-				img {
-					object-fit: cover;
-					height: 100%;
+				.entry-meta li {
+					a,
+					.bi {
+						color: #ddd;
+					}
 				}
-				.card-body {
-					width: 100%;
-					padding: 16px 20px;
-					padding-top: 50px;
+				.category {
 					position: absolute;
-					bottom: 0;
-					background: linear-gradient(#0000, rgba(34, 34, 34, 0.85), #222);
-
-					.entry-meta li {
-						a,
-						.bi {
-							color: #eee;
-						}
-						&.category {
-							position: absolute;
-							top: 10px;
-							left: 10px;
-						}
-					}
-					.entry-title h2 {
-						color: #fff;
-						font-size: 22px;
-					}
+					top: 10px;
+				}
+				.entry-title h2 {
+					color: #fff;
+					font-size: 22px;
 				}
 			}
 		}

@@ -20,7 +20,7 @@ header {
 	}
 
 	#mobile_navbar {
-		padding: 14px 10px;
+		padding: 14px 0;
 		.container {
 			justify-content: flex-end;
 		}
@@ -49,7 +49,6 @@ header {
 		}
 		#searchForm {
 			width: 100%;
-			@include hideOnMobile;
 			form.search_form {
 				max-width: 360px;
 				height: 38px;
@@ -88,6 +87,12 @@ main {
 					background: $mainColor;
 				}
 			}
+			.image {
+				max-width: 580px;
+				padding: 18px 0;
+				border-top: 1px solid #eee;
+				border-bottom: 1px solid #eee;
+			}
 		}
 	}
 }
@@ -97,6 +102,7 @@ footer {
 	padding: 10px;
 	background: #222;
 	text-align: center;
+	margin-top: 30px;
 
 	.container .col-md-6 {
 		margin: 10px auto;
@@ -142,6 +148,27 @@ footer {
 				&:hover {
 					background: #f5f5f5;
 				}
+			}
+		}
+		#mobile_navbar #searchForm {
+			transform: translateY(-100vh);
+			width: 100vw;
+			height: 100vh;
+			position: absolute;
+			top: 0;
+			left: 0;
+			display: grid;
+			place-content: center;
+			z-index: 50;
+			background: rgba(26, 26, 26, 0.94);
+
+			form.search_form {
+				width: 85vw;
+				height: 45px;
+				margin-bottom: 50%;
+			}
+			&.slideUp {
+				transform: translateY(100vh);
 			}
 		}
 	}

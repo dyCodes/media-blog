@@ -19,7 +19,7 @@ header {
 		}
 	}
 
-	#mobile_navbar {
+	#main_navbar {
 		padding: 14px 0;
 		.container {
 			justify-content: flex-end;
@@ -155,7 +155,7 @@ footer {
 	header {
 		background: #111;
 
-		#mobile_navbar .navbar-collapse ul {
+		#main_navbar .navbar-collapse ul {
 			background: #fff;
 
 			a.nav_link {
@@ -168,7 +168,7 @@ footer {
 				}
 			}
 		}
-		#mobile_navbar #searchForm {
+		#main_navbar #searchForm {
 			transform: translateY(-100vh);
 			width: 100vw;
 			height: 100vh;

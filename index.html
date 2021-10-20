@@ -38,8 +38,8 @@
   <!------- Header ------->
   <header id="header" class="">
 
-    <!-- Mobile NavBar -->
-    <nav id="mobile_navbar" class="navbar navbar-expand-md" id="navbar">
+    <!-- Main NavBar -->
+    <nav id="main_navbar" class="navbar navbar-expand-md" id="navbar">
       <div class="container">
         <!-- Logo -->
         <a class="logo" href="">
@@ -152,7 +152,7 @@
 
                 <div class="card-body">
                   <div class="category _flex">
-                    <a href="blog-single.html">Design</a>
+                    <a href="blog-single.html">Business</a>
                   </div>
 
 
@@ -181,7 +181,7 @@
 
                 <div class="card-body">
                   <div class="category _flex">
-                    <a href="blog-single.html">Design</a>
+                    <a href="blog-single.html">travel</a>
                   </div>
 
 
@@ -224,19 +224,36 @@
 
             <div class="card-body">
               <div class="category _flex">
-                <a href="blog-single.html">Design</a>
+                <a href="blog-single.html">Travel</a>
               </div>
               <a href="blog-single.html" class="entry-title">
                 <h2>Some quick example text to build on the card.</h2>
               </a>
 
-              <p class="entry-content">
-                Similique neque nam consequuntur ad non maxime aliquam quas. Quibusdam animi praesentium. Aliquam et
-                laboriosam eius aut
-                nostrum quidem aliquid dicta. Et eveniet enim. Qui velit est ea dolorem doloremque deleniti aperiam unde
-                soluta. Est cum
-                et quod quos aut ut et sit sunt. Voluptate porro consequatur assumenda perferendis dolore.
-              </p>
+              <ul class="entry-meta _flex">
+                <li class="_flex">
+                  <i class="bi bi-person"></i> <a href="blog-single.html">Yusuf Daudu</a>
+                </li>
+                <li class="_flex">
+                  <i class="bi bi-clock"></i>
+                  <a href="blog-single.html">
+                    <time datetime="2021-01-01">nov 1, 2021</time></a>
+                </li>
+              </ul>
+
+            </div>
+          </article>
+
+          <article class="card post">
+            <img src="./assets/img/blog/blog-1.jpg" alt="">
+
+            <div class="card-body">
+              <div class="category _flex">
+                <a href="blog-single.html">Design</a>
+              </div>
+              <a href="blog-single.html" class="entry-title">
+                <h2>Some quick example text to build on the card.</h2>
+              </a>
 
               <ul class="entry-meta _flex">
                 <li class="_flex">
@@ -257,21 +274,13 @@
 
             <div class="card-body">
               <div class="category _flex">
-                <a href="blog-single.html">Design</a>
+                <a href="blog-single.html">Business</a>
               </div>
 
 
               <a href="blog-single.html" class="entry-title">
                 <h2>Some quick example text to build on the card</h2>
               </a>
-
-              <p class="entry-content">
-                Similique neque nam consequuntur ad non maxime aliquam quas. Quibusdam animi praesentium. Aliquam et
-                laboriosam eius aut
-                nostrum quidem aliquid dicta. Et eveniet enim. Qui velit est ea dolorem doloremque deleniti aperiam unde
-                soluta. Est cum
-                et quod quos aut ut et sit sunt. Voluptate porro consequatur assumenda perferendis dolore.
-              </p>
 
               <ul class="entry-meta _flex">
                 <li class="_flex">
@@ -450,6 +459,7 @@
   <script src="assets/vendor/swiper-bundle.min.js"></script>
 
   <script>
+    // HERO POST SLIDER
     new Swiper('#post_slider_hero', {
       slidesPerView: 1,
       spaceBetween: 10,
@@ -467,9 +477,8 @@
         el: '.swiper-pagination',
         // dynamicBullets: true,
       },
-
       breakpoints: {
-        920: {
+        768: {
           slidesPerView: 2,
         },
         1024: {
@@ -477,7 +486,6 @@
         },
       }
     });
-
   </script>
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>

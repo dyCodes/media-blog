@@ -95,6 +95,24 @@ main {
 			}
 		}
 	}
+
+	#posts_pagination ul {
+		padding-top: 15px;
+		.page-link {
+			color: #555;
+
+			&:focus {
+				border-color: #ffc107;
+				box-shadow: none;
+			}
+		}
+		li.active a,
+		a:focus {
+			// color: #222;
+			background-color: $mainColor;
+			border-color: $mainColor;
+		}
+	}
 }
 /*!----- FOOTER -------*/
 footer {

@@ -36,16 +36,26 @@
 
 <body>
   <!------- Header ------->
-  <header id="header" class="">
+  <header id="header" class="page-header">
+
+    <div class="main_navbar _flex container">
+      <!-- Logo -->
+      <a class="logo" href="">
+        <img src="./assets/img/logo.png" alt="EventPlanner" />
+      </a>
+      <!-- Search Form -->
+      <div id="searchForm">
+        <form class="input-group search_form" action="">
+          <input class="form-control" type="text" placeholder="Search">
+          <button type="submit" class="btn"><i class="bi bi-search"></i></button>
+        </form>
+        <div class="overlay"></div>
+      </div>
+    </div>
 
     <!-- Main NavBar -->
-    <nav id="main_navbar" class="navbar navbar-expand-md" id="navbar">
+    <nav class="navbar navbar-expand-md" id="navbar">
       <div class="container">
-        <!-- Logo -->
-        <a class="logo" href="">
-          <img src="./assets/img/logo.png" alt="EventPlanner" />
-        </a>
-
         <!-- Search Btn -->
         <div id="searchBtn">
           <div class="bi-search"></div>
@@ -59,7 +69,7 @@
 
         <!-- Nav Links -->
         <div class="collapse navbar-collapse justify-content-start" id="navbarContent">
-          <ul class="navbar-nav mt-3">
+          <ul class="navbar-nav mt-3 mb-1 my-md-0">
             <li><a class="nav_link active" href="#hero">Home</a></li>
             <li>
               <a class="nav_link" href="#services">Services</a>
@@ -71,38 +81,6 @@
             <li><a class="nav_link" href="#contact">Contact</a></li>
           </ul>
         </div>
-
-        <!-- Search Form -->
-        <div id="searchForm">
-          <form class="input-group search_form" action="">
-            <input class="form-control" type="text" placeholder="Search">
-            <button type="submit" class="btn"><i class="bi bi-search"></i></button>
-          </form>
-          <div class="overlay"></div>
-        </div>
-
-      </div>
-    </nav>
-
-    <!-- Desktop NavBar -->
-    <nav id="desktop_navbar" class="navbar navbar-expand">
-      <div class="container">
-
-        <!-- Nav Links -->
-        <div class="collapse navbar-collapse justify-content-start">
-          <ul class="navbar-nav">
-            <li><a class="nav_link active" href="#hero">Home</a></li>
-            <li>
-              <a class="nav_link" href="#services">Services</a>
-            </li>
-            <li><a class="nav_link" href="#about">About</a></li>
-            <li>
-              <a class="nav_link" href="#gallery">Gallery</a>
-            </li>
-            <li><a class="nav_link" href="#contact">Contact</a></li>
-          </ul>
-        </div>
-
       </div>
     </nav>
 

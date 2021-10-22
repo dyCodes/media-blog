@@ -53,10 +53,37 @@ header {
 					color: $mainColor !important;
 				}
 			}
+			li:first-of-type a {
+				padding-left: 0;
+			}
 		}
 	}
 }
 main {
+	.cover_title {
+		padding: 14px 0;
+		background: #f5f5f5;
+		.container {
+			justify-content: space-between;
+			._title {
+				text-transform: uppercase;
+			}
+		}
+		ul {
+			li {
+				color: #555;
+				text-transform: capitalize;
+				a {
+					color: $mainColor;
+				}
+				& + li::before {
+					display: inline-block;
+					padding: 5px;
+					content: '/';
+				}
+			}
+		}
+	}
 	#sidebar {
 		box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 16px;
 		padding: 30px;
@@ -194,6 +221,12 @@ footer {
 		}
 	}
 	main {
+		.cover_title .container {
+			flex-direction: column;
+			._title {
+				margin-bottom: 0;
+			}
+		}
 		#sidebar {
 			padding: 30px 20px;
 		}

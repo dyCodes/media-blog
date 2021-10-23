@@ -38,14 +38,12 @@ article.post {
 		}
 	}
 	.entry-title {
-		color: #222;
-		h2 {
-			font-size: 22px;
+		a {
+			color: #222;
 		}
 	}
 	.entry-content {
 		margin: 16px 0;
-		display: none;
 	}
 }
 .posts_list {

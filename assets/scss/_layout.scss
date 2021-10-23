@@ -84,39 +84,6 @@ main {
 			}
 		}
 	}
-	#sidebar {
-		box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 16px;
-		padding: 30px;
-		margin-bottom: 20px;
-
-		.widget {
-			margin-bottom: 40px;
-
-			h3.sidebar-title {
-				font-size: 22px;
-				text-transform: uppercase;
-				position: relative;
-				margin-bottom: 26px;
-
-				&::after {
-					content: '';
-					height: 2px;
-					width: 60px;
-					position: absolute;
-					left: 0;
-					bottom: -10px;
-					background: $mainColor;
-				}
-			}
-			.image {
-				max-width: 580px;
-				padding: 18px 0;
-				border-top: 1px solid #eee;
-				border-bottom: 1px solid #eee;
-			}
-		}
-	}
-
 	#posts_pagination ul {
 		padding-top: 15px;
 		.page-link {
@@ -132,6 +99,39 @@ main {
 			// color: #222;
 			background-color: $mainColor;
 			border-color: $mainColor;
+		}
+	}
+}
+/*!----- BLOG SIDEBAR SECTION -------*/
+#sidebar {
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 16px;
+	padding: 30px;
+	margin-bottom: 20px;
+
+	.widget {
+		margin-bottom: 40px;
+
+		h3.sidebar-title {
+			font-size: 22px;
+			text-transform: uppercase;
+			position: relative;
+			margin-bottom: 26px;
+
+			&::after {
+				content: '';
+				height: 2px;
+				width: 60px;
+				position: absolute;
+				left: 0;
+				bottom: -10px;
+				background: $mainColor;
+			}
+		}
+		.image {
+			max-width: 580px;
+			padding: 18px 0;
+			border-top: 1px solid #eee;
+			border-bottom: 1px solid #eee;
 		}
 	}
 }

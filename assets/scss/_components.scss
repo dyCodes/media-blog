@@ -25,7 +25,7 @@ article.post {
 		text-transform: capitalize;
 
 		li {
-			margin-right: 20px;
+			margin-right: 18px;
 			font-size: 15px;
 
 			a,
@@ -113,7 +113,7 @@ form.search_form {
 		background: $mainColor;
 		border-color: $mainColor;
 		a {
-			color: #222;
+			color: #222 !important;
 		}
 	}
 }

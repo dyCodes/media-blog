@@ -1,10 +1,10 @@
 /*!
  *--------------
- * Template Name: TechZone Blog - v1.0
- * Template URL: dycodes.github.com/TechZone
+ * Template Name: Media Blog - v1.0
+ * Template URL: https://github.com/dyCodes/media-blog
  * Author: Yusuf Daudu - dyCodes
- * Author URL: https://github.com/dycodes
- * License: https://dycodes.github.com/TechZone/LICENSE
+ * Author URL: https://github.com/dyCodes
+ * License: https://dycodes.github.io/media-blog/LICENSE
  *---------------------------------
  */
 

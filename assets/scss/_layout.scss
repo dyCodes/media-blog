@@ -2,10 +2,10 @@
 header {
 	background: #fff;
 	.main_navbar {
-		padding: 8px 0;
+		padding: 10px 0;
 		.logo {
 			display: block;
-			max-width: 200px;
+			max-width: 210px;
 		}
 		#searchForm {
 			width: 100%;
@@ -46,7 +46,6 @@ header {
 				padding: 10px;
 				margin-right: 8px;
 				letter-spacing: 0.2px;
-				// font-family: 'Open Sans';
 
 				&.active,
 				&:hover {
@@ -90,13 +89,13 @@ main {
 			color: #555;
 
 			&:focus {
-				border-color: #ffc107;
+				border-color: $mainColor;
 				box-shadow: none;
 			}
 		}
 		li.active a,
 		a:focus {
-			// color: #222;
+			color: #fff;
 			background-color: $mainColor;
 			border-color: $mainColor;
 		}

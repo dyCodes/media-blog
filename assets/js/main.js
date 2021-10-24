@@ -43,3 +43,16 @@ selectElem('#searchBtn').addEventListener('click', () => {
 selectElem('#searchForm .overlay').addEventListener('click', () => {
 	searchForm.classList.remove('slideUp');
 });
+
+window.addEventListener('scroll', () => {
+	// SHOW BACK2TOP BUTTON
+	let position = window.scrollY;
+	if (position > 500) {
+		selectElem('#back2Top').classList.add('_show');
+	} else {
+		selectElem('#back2Top').classList.remove('_show');
+	}
+});
+selectElem('#back2Top').addEventListener('click', () => {
+	scrollto('#header');
+});

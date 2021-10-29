@@ -8,7 +8,7 @@ HTML Blog template created with Bootstrap and SCSS.
 
 ## Live Demo
 
-https://eventplanner-template.netlify.app/
+https://dycodes.github.io/media-blog/
 
 ## Built With
 
